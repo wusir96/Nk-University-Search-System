@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>点击统计</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .stats-container { max-width: 1000px; margin: 0 auto; }
+        .stats-section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .stat-item { background: #f8f9fa; padding: 10px; border-radius: 3px; }
+        .recent-clicks { max-height: 400px; overflow-y: auto; }
+        .click-entry { font-family: monospace; font-size: 12px; padding: 2px 0; border-bottom: 1px solid #eee; }
+        h1, h2 { color: #333; }
+        .total-stats { background: #e7f3ff; padding: 15px; border-radius: 5px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <h1>📊 点击统计分析</h1>
+        
+        <div class="total-stats">
+            <h2>总点击次数: {{ stats.total_clicks }}</h2>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stats-section">
+                <h2>🌐 热门域名 (Top 10)</h2>
+                {% if stats.top_domains %}
+                    {% for domain, count in stats.top_domains.items() %}
+                    <div class="stat-item">
+                        <strong>{{ domain }}</strong>: {{ count }} 次点击
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p>暂无点击数据</p>
+                {% endif %}
+            </div>
+            
+            <div class="stats-section">
+                <h2>🔍 热门查询 (Top 10)</h2>
+                {% if stats.top_queries %}
+                    {% for query, count in stats.top_queries.items() %}
+                    <div class="stat-item">
+                        <strong>"{{ query }}"</strong>: {{ count }} 次搜索后点击
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p>暂无查询数据</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <h2>⏰ 最近点击记录 (最新20条)</h2>
+            <div class="recent-clicks">
+                {% if stats.recent_clicks %}
+                    {% for click in stats.recent_clicks %}
+                    <div class="click-entry">{{ click.strip() }}</div>
+                    {% endfor %}
+                {% else %}
+                    <p>暂无点击记录</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="/">🏠 返回首页</a> |
+            <a href="/demo">🎯 功能演示</a> |
+            <a href="/logs">📝 查询日志</a>
+        </div>
+    </div>
+</body>
+</html>

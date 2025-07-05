@@ -1,0 +1,141 @@
+2025-05-29 21:09:40,355 - INFO - Starting to scrape news with SQLite backend...
+2025-05-29 21:09:40,355 - INFO - Processing batch 1, pages 1 to 10
+2025-05-29 21:09:41,265 - ERROR - Request Attempt 1 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:41,315 - ERROR - Request Attempt 1 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:41,557 - ERROR - Request Attempt 1 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:41,885 - ERROR - Request Attempt 1 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:41,946 - ERROR - Request Attempt 1 failed for http://news.nankai.edu.cn/dcxy/index.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/index.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:44,819 - ERROR - Request Attempt 2 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:44,904 - ERROR - Request Attempt 2 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:45,430 - ERROR - Request Attempt 2 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:45,494 - ERROR - Request Attempt 2 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:46,287 - ERROR - Request Attempt 2 failed for http://news.nankai.edu.cn/dcxy/index.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/index.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:49,137 - ERROR - Request Attempt 3 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:49,138 - ERROR - All attempts failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000001.shtml
+2025-05-29 21:09:49,146 - ERROR - Request Attempt 3 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:49,147 - ERROR - All attempts failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000003.shtml
+2025-05-29 21:09:49,244 - ERROR - Request Attempt 3 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:49,244 - ERROR - All attempts failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000004.shtml
+2025-05-29 21:09:49,400 - ERROR - Request Attempt 3 failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml: HTTPSConnectionPool(host='news.nankai.edu.cn', port=443): Max retries exceeded with url: /dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)')))
+2025-05-29 21:09:49,400 - ERROR - All attempts failed for https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000002.shtml
+2025-05-29 21:11:32,449 - INFO - Starting to scrape news with SQLite backend...
+2025-05-29 21:11:32,449 - INFO - Processing batch 1, pages 1 to 10
+2025-05-29 21:11:33,836 - INFO - Processing news item: 南开大学发动捐助庄广立 已捐款4000多元 from http://news.nankai.edu.cn/dcxy/system/2006/11/21/000002825.shtml
+2025-05-29 21:11:36,735 - INFO - Processing news item: 历史学院志愿者前往海棠街道开展主题文化服务活动 from http://news.nankai.edu.cn/dcxy/system/2025/05/29/030067301.shtml
+2025-05-29 21:11:36,959 - INFO - Processing news item: 哲学文化周上演“爱智慧比哲思”知识竞赛 from http://news.nankai.edu.cn/dcxy/system/2006/12/06/000003240.shtml
+2025-05-29 21:11:37,313 - INFO - Processing news item: 九一八：勿忘国耻 振兴中华 from http://news.nankai.edu.cn/dcxy/system/2006/09/19/000001530.shtml
+2025-05-29 21:11:37,898 - INFO - Processing news item: 绿色行动小组：关注环保，从不随地吐痰开始 from http://news.nankai.edu.cn/dcxy/system/2006/10/26/000002309.shtml
+2025-05-29 21:11:38,241 - INFO - Processing news item: 海南籍南开学子欲退学打工救父 from http://news.nankai.edu.cn/dcxy/system/2006/11/19/000002801.shtml
+2025-05-29 21:11:38,297 - INFO - Processing news item: 罗明锜为新生讲南开精神 from http://news.nankai.edu.cn/dcxy/system/2006/12/03/000003144.shtml
+2025-05-29 21:11:38,543 - INFO - Processing news item: 迎新晚会 梦圆南开 from http://news.nankai.edu.cn/dcxy/system/2006/09/18/000001501.shtml
+2025-05-29 21:11:39,581 - INFO - Processing news item: “公能”讲堂学员进行素质拓展训练 from http://news.nankai.edu.cn/dcxy/system/2006/10/25/000002291.shtml
+2025-05-29 21:11:40,303 - INFO - Processing news item: 商学院新生“万米接力跑” from http://news.nankai.edu.cn/dcxy/system/2006/09/18/000001500.shtml
+2025-05-29 21:11:40,412 - INFO - Processing news item: “从语言模型到教学工具：ChatGPT在高年级文学与电影课中的应... from http://news.nankai.edu.cn/dcxy/system/2025/05/29/030067300.shtml
+2025-05-29 21:11:40,962 - INFO - Processing news item: 南开周末论坛：艾跃进激情话中东 from http://news.nankai.edu.cn/dcxy/system/2006/11/19/000002796.shtml
+2025-05-29 21:11:41,454 - INFO - Processing news item: 南开天大口琴音乐爱好者切磋技艺 from http://news.nankai.edu.cn/dcxy/system/2006/12/03/000003141.shtml
+2025-05-29 21:11:42,545 - INFO - Processing news item: 成分献血知识讲座举行 from http://news.nankai.edu.cn/dcxy/system/2006/11/19/000002793.shtml
+2025-05-29 21:11:42,731 - INFO - Processing news item: 环科协会举办第六届旧书交流活动 from http://news.nankai.edu.cn/dcxy/system/2006/10/25/000002289.shtml
+2025-05-29 21:11:43,916 - INFO - Processing news item: 让汉语走向世界 用摄影沟通心灵 from http://news.nankai.edu.cn/dcxy/system/2006/11/19/000002787.shtml
+2025-05-29 21:11:44,063 - ERROR - Error saving snapshot for http://news.nankai.edu.cn/dcxy/system/2006/09/18/000001500.shtml to SQLite: Recursive use of cursors not allowed.
+2025-05-29 21:11:44,065 - INFO - Processing news item: 微软与你同行：身在微软，心系南开 from http://news.nankai.edu.cn/dcxy/system/2006/09/16/000001480.shtml
+2025-05-29 21:11:44,070 - INFO - Processing news item: 生科院"学脉相承"计划探索全周期学风建设新生态 from http://news.nankai.edu.cn/dcxy/system/2025/05/29/030067296.shtml
+2025-05-29 21:11:44,098 - INFO - Processing news item: 哲学文化周辩论赛挑战美学难题 from http://news.nankai.edu.cn/dcxy/system/2006/12/01/000003111.shtml
+2025-05-29 21:11:44,150 - INFO - Processing news item: 百事新星大赛南开赛区海选举行 from http://news.nankai.edu.cn/dcxy/system/2006/10/23/000002229.shtml
+2025-05-29 21:11:46,220 - INFO - Processing news item: 微软与你同行：沈向洋讲述“研究的魅力与乐趣” from http://news.nankai.edu.cn/dcxy/system/2006/09/16/000001468.shtml
+2025-05-29 21:11:46,351 - INFO - Processing news item: 以青春的名义精彩——一个“保研”宿舍的故事 from http://news.nankai.edu.cn/dcxy/system/2006/11/18/000002785.shtml
+2025-05-29 21:11:48,004 - INFO - Processing news item: 微软与你同行：潘爱民走进数学院 from http://news.nankai.edu.cn/dcxy/system/2006/09/16/000001471.shtml
+2025-05-29 21:11:48,157 - INFO - Processing news item: “医Young青春”医学院开放日让医学科普“活”起来 from http://news.nankai.edu.cn/dcxy/system/2025/05/27/030067258.shtml
+2025-05-29 21:11:48,225 - INFO - Processing news item: 世界艾滋日 “红丝带”在南开园飘扬 from http://news.nankai.edu.cn/dcxy/system/2006/12/01/000003099.shtml
+2025-05-29 21:11:48,402 - INFO - Processing news item: 政府学院文化节暨首届津京高校学院文化交流会开幕 from http://news.nankai.edu.cn/dcxy/system/2006/10/22/000002193.shtml
+2025-05-29 21:11:49,787 - INFO - Processing news item: 学生社团“招兵”忙 from http://news.nankai.edu.cn/dcxy/system/2006/09/14/000001444.shtml
+2025-05-29 21:11:49,789 - INFO - Processing news item: 旅游与服务学院赴青岛开展访企拓岗活动 from http://news.nankai.edu.cn/dcxy/system/2025/05/27/030067255.shtml
+2025-05-29 21:11:49,898 - INFO - Processing news item: 首届津京高校南开—北大政府学院文化交流会圆满成功 from http://news.nankai.edu.cn/dcxy/system/2006/12/01/000003097.shtml
+2025-05-29 21:11:50,144 - INFO - Processing news item: 南开大学谷歌俱乐部开营 from http://news.nankai.edu.cn/dcxy/system/2006/10/21/000002173.shtml
+2025-05-29 21:11:50,189 - INFO - Processing news item: 英语演讲赛一等奖得主“传道”学习法 from http://news.nankai.edu.cn/dcxy/system/2006/11/18/000002784.shtml
+2025-05-29 21:11:50,807 - INFO - Processing news item: 2006年南开大学留学生学习优秀奖颁发 from http://news.nankai.edu.cn/dcxy/system/2006/11/28/000003050.shtml
+2025-05-29 21:11:51,116 - INFO - Processing news item: 我校学生可免费领用急救药品 from http://news.nankai.edu.cn/dcxy/system/2006/09/13/000001385.shtml
+2025-05-29 21:11:51,557 - INFO - Processing news item: 周恩来与爱国主义：“南开系”师生同上一体化实践课 from http://news.nankai.edu.cn/dcxy/system/2025/05/26/030067248.shtml
+2025-05-29 21:11:51,689 - INFO - Processing news item: 【推荐】第八届研究生支教团的西部支教生活 from http://news.nankai.edu.cn/dcxy/system/2006/11/17/000002774.shtml
+2025-05-29 21:11:52,237 - INFO - Processing news item: 南开大学第四届“e彩青春”活动月落幕 from http://news.nankai.edu.cn/dcxy/system/2006/11/28/000003035.shtml
+2025-05-29 21:11:52,597 - INFO - Processing news item: 同窗募捐伸援手 from http://news.nankai.edu.cn/dcxy/system/2006/09/12/000001344.shtml
+2025-05-29 21:11:53,197 - INFO - Processing news item: 永远的怀念—纪念周恩来总理逝世30周年图片展举行 from http://news.nankai.edu.cn/zhxw/system/2006/11/17/000002763.shtml
+2025-05-29 21:11:54,194 - INFO - Processing news item: 助同窗 from http://news.nankai.edu.cn/dcxy/system/2006/09/14/000001413.shtml
+2025-05-29 21:11:54,246 - INFO - Processing news item: 泰达学院十大歌手赛总决赛揭晓 from http://news.nankai.edu.cn/dcxy/system/2006/11/28/000003033.shtml
+2025-05-29 21:11:54,892 - INFO - Processing news item: 咖啡•茶•女性主义与艺术 from http://news.nankai.edu.cn/dcxy/system/2006/10/18/000002120.shtml
+2025-05-29 21:11:55,339 - INFO - Processing news item: 管理科学学社：在社会实践中励志成才 from http://news.nankai.edu.cn/dcxy/system/2006/11/27/000003013.shtml
+2025-05-29 21:11:55,467 - INFO - Processing news item: 校医院职工接受安全防火知识教育 from http://news.nankai.edu.cn/dcxy/system/2006/09/11/000001305.shtml
+2025-05-29 21:11:56,065 - INFO - Processing news item: 天交奇迹弦乐四重奏奏响南开文化周末 from http://news.nankai.edu.cn/dcxy/system/2025/05/25/030067222.shtml
+2025-05-29 21:11:56,426 - INFO - Processing news item: 【附图】06级艺术设计系把课堂搬到大自然 from http://news.nankai.edu.cn/dcxy/system/2006/10/16/000002049.shtml
+2025-05-29 21:11:56,527 - INFO - Processing news item: “公能”素质讲堂：志存高远 脚踏实地 from http://news.nankai.edu.cn/dcxy/system/2006/11/27/000003009.shtml
+2025-05-29 21:11:56,612 - INFO - Processing news item: “周末乐坛”欢庆教师节 from http://news.nankai.edu.cn/dcxy/system/2006/09/11/000001297.shtml
+2025-05-29 21:11:57,653 - INFO - Processing news item: 南开大学“远见杯”英语演讲比赛决赛落幕 from http://news.nankai.edu.cn/dcxy/system/2006/11/13/000002677.shtml
+2025-05-29 21:11:58,076 - INFO - Processing news item: “力聚南开 燃动校园”南开大学第七届“拉汽车”大赛举行 from http://news.nankai.edu.cn/dcxy/system/2025/05/23/030067212.shtml
+2025-05-29 21:11:58,294 - INFO - Processing news item: “让爱传承”第二期爱心资助活动举行 from http://news.nankai.edu.cn/dcxy/system/2006/11/27/000003005.shtml
+2025-05-29 21:11:58,385 - INFO - Processing news item: 信息学院第四届“e彩青春”活动月开幕 from http://news.nankai.edu.cn/dcxy/system/2006/10/16/000002037.shtml
+2025-05-29 21:11:58,495 - INFO - Processing news item: 幼儿园教师畅谈教师素质 from http://news.nankai.edu.cn/dcxy/system/2006/09/11/000001294.shtml
+2025-05-29 21:11:59,232 - INFO - Processing news item: 物理伯苓班举办学涯规划经验分享会 from http://news.nankai.edu.cn/dcxy/system/2025/05/23/030067204.shtml
+2025-05-29 21:11:59,446 - INFO - Processing news item: 2006级新生党员参观长征胜利70周年展览 from http://news.nankai.edu.cn/dcxy/system/2006/11/13/000002676.shtml
+2025-05-29 21:12:00,034 - INFO - Processing news item: 商学院本科生党支部虞城希望小学播种希望 from http://news.nankai.edu.cn/dcxy/system/2006/09/09/000001257.shtml
+2025-05-29 21:12:00,273 - INFO - Processing news item: 南开女排以0：3惜败南部队 from http://news.nankai.edu.cn/zhxw/system/2006/10/15/000002015.shtml
+2025-05-29 21:12:00,579 - INFO - Processing news item: 史广顺：思辨的光芒 from http://news.nankai.edu.cn/dcxy/system/2006/11/27/000002999.shtml
+2025-05-29 21:12:01,302 - INFO - Processing news item: 南开辩协获京津地区八校辩论赛亚军 from http://news.nankai.edu.cn/dcxy/system/2006/11/12/000002666.shtml
+2025-05-29 21:12:01,535 - INFO - Processing news item: 古典与流行完美交融 维也纳管乐队做客周末乐坛 from http://news.nankai.edu.cn/dcxy/system/2006/10/14/000002003.shtml
+2025-05-29 21:12:02,356 - INFO - Processing news item: 金融系党支部：“模拟长征” 徒步观炮台 from http://news.nankai.edu.cn/dcxy/system/2006/11/25/000002953.shtml
+2025-05-29 21:12:02,558 - INFO - Processing news item: 南开等14所高校联合发出向李春华同学学习的倡议书 from http://news.nankai.edu.cn/dcxy/system/2006/10/12/000001944.shtml
+2025-05-29 21:12:03,383 - INFO - Processing news item: 六小龄童漫谈猴文化传承与弘扬 from http://news.nankai.edu.cn/dcxy/system/2006/09/08/000001227.shtml
+2025-05-29 21:12:03,498 - INFO - Processing news item: 南开大学第三届哲学文化周开幕 from http://news.nankai.edu.cn/dcxy/system/2006/11/25/000002952.shtml
+2025-05-29 21:12:03,671 - INFO - Processing news item: 附属医院为学生支教团开展心理健康讲座 from http://news.nankai.edu.cn/dcxy/system/2025/05/23/030067201.shtml
+2025-05-29 21:12:03,733 - INFO - Processing news item: 李春华：大学生的好榜样 from http://news.nankai.edu.cn/dcxy/system/2006/10/12/000001939.shtml
+2025-05-29 21:12:04,388 - INFO - Processing news item: 寻福迹 奥运情 from http://news.nankai.edu.cn/dcxy/system/2006/11/10/000002636.shtml
+2025-05-29 21:12:04,611 - INFO - Processing news item: “美猴王”走进南开园 from http://news.nankai.edu.cn/dcxy/system/2006/09/08/000001229.shtml
+2025-05-29 21:12:05,089 - INFO - Processing news item: 第二届汉语节圆满闭幕 from http://news.nankai.edu.cn/dcxy/system/2006/11/25/000002947.shtml
+2025-05-29 21:12:05,625 - INFO - Processing news item: 历史学院与海棠街道联合开展红色经典共读活动 from http://news.nankai.edu.cn/dcxy/system/2025/05/23/030067202.shtml
+2025-05-29 21:12:05,822 - INFO - Processing news item: 宣传奥运文明 展南开学子风采 from http://news.nankai.edu.cn/dcxy/system/2006/10/11/000001931.shtml
+2025-05-29 21:12:06,199 - INFO - Processing news item: 南开大学：让学生参与学校食堂管理 from http://news.nankai.edu.cn/dcxy/system/2006/11/09/000002613.shtml
+2025-05-29 21:12:06,774 - INFO - Processing news item: 团市委王华：奥运志愿者离你有多远 from http://news.nankai.edu.cn/dcxy/system/2006/11/25/000002944.shtml
+2025-05-29 21:12:07,055 - INFO - Processing news item: 文学院学生舞蹈大赛夺冠 from http://news.nankai.edu.cn/dcxy/system/2006/09/06/000001178.shtml
+2025-05-29 21:12:07,568 - INFO - Processing news item: 恩来精神展演团赴中南大学演出 from http://news.nankai.edu.cn/dcxy/system/2025/05/23/030067197.shtml
+2025-05-29 21:12:07,884 - INFO - Processing news item: 第二届天津高校模拟联合国在南开举行 from http://news.nankai.edu.cn/dcxy/system/2006/11/07/000002568.shtml
+2025-05-29 21:12:07,974 - INFO - Processing news item: 信步迈向新生活：让学习承载未来 from http://news.nankai.edu.cn/dcxy/system/2006/10/06/000001823.shtml
+2025-05-29 21:12:08,682 - INFO - Processing news item: 加油挑战杯 加油南开 from http://news.nankai.edu.cn/dcxy/system/2006/11/24/000002940.shtml
+2025-05-29 21:12:08,830 - INFO - Processing news item: 软件本科生捧回嵌入式设计大赛全国三等奖 from http://news.nankai.edu.cn/dcxy/system/2006/09/04/000001072.shtml
+2025-05-29 21:12:09,011 - INFO - Processing news item: 数学院学子走进天津三中开展“备考加油站”志愿服务 from http://news.nankai.edu.cn/dcxy/system/2025/05/23/030067195.shtml
+2025-05-29 21:12:09,470 - INFO - Processing news item: 新生心里话：“我在南开挺好的” from http://news.nankai.edu.cn/dcxy/system/2006/10/06/000001821.shtml
+2025-05-29 21:12:09,581 - INFO - Processing news item: 南开大学第二十一期学生业余党校开学 from http://news.nankai.edu.cn/dcxy/system/2006/11/07/000002551.shtml
+2025-05-29 21:12:09,823 - INFO - Processing news item: 【图文】南开毕业生义卖救同窗 from http://news.nankai.edu.cn/dcxy/system/2006/09/03/000001037.shtml
+2025-05-29 21:12:10,398 - INFO - Processing news item: 经济学院举办“中国企业适用双边税收协定之基础理论与实务操... from http://news.nankai.edu.cn/dcxy/system/2025/05/22/030067185.shtml
+2025-05-29 21:12:10,625 - INFO - Processing news item: 绿色行动小组：为了环境 请拒绝一次性木筷 from http://news.nankai.edu.cn/dcxy/system/2006/11/24/000002926.shtml
+2025-05-29 21:12:11,256 - INFO - Processing news item: 第59期黄埔团校开学 from http://news.nankai.edu.cn/dcxy/system/2006/10/04/000001809.shtml
+2025-05-29 21:12:11,494 - INFO - Processing news item: 回报母校 生科院校友设新生奖学金 from http://news.nankai.edu.cn/dcxy/system/2006/11/06/000002537.shtml
+2025-05-29 21:12:12,145 - INFO - Processing news item: 医学院暑期社会实践：放飞理想、放飞希望（上） from http://news.nankai.edu.cn/dcxy/system/2006/09/03/000001032.shtml
+2025-05-29 21:12:12,573 - INFO - Processing news item: 经济学院与河东区凤麟里社区共建志愿服务基地 from http://news.nankai.edu.cn/dcxy/system/2025/05/22/030067182.shtml
+2025-05-29 21:12:12,731 - INFO - Processing news item: 南开大学获市大学生运动会团体第二名 from http://news.nankai.edu.cn/dcxy/system/2006/11/23/000002909.shtml
+2025-05-29 21:12:13,256 - INFO - Processing news item: 商学院：中秋祝福暖新生 from http://news.nankai.edu.cn/zhxw/system/2006/10/01/000001788.shtml
+2025-05-29 21:12:13,370 - INFO - Processing news item: 南开允公女排1:3负于河南华威女排 from http://news.nankai.edu.cn/dcxy/system/2006/11/06/000002526.shtml
+2025-05-29 21:12:13,591 - INFO - Processing news item: 医学院暑期社会实践：放飞理想、放飞希望（下） from http://news.nankai.edu.cn/dcxy/system/2006/09/03/000001033.shtml
+2025-05-29 21:12:14,112 - INFO - Processing news item: 每天学习15小时——四名考研生的一天 from http://news.nankai.edu.cn/dcxy/system/2006/11/23/000002905.shtml
+2025-05-29 21:12:14,176 - INFO - Processing news item: 【图文】庆金秋佳节 南开学子尽展厨艺 from http://news.nankai.edu.cn/dcxy/system/2006/09/30/000001760.shtml
+2025-05-29 21:12:14,220 - INFO - Processing news item: 商学院举办“全心权益 服务南开”提案大赛 from http://news.nankai.edu.cn/dcxy/system/2025/05/22/030067171.shtml
+2025-05-29 21:12:15,098 - INFO - Processing news item: 文学院艺术沙龙：什么画是好画 from http://news.nankai.edu.cn/dcxy/system/2006/11/03/000002505.shtml
+2025-05-29 21:12:15,205 - INFO - Processing news item: 南开大学幼儿园：小朋友，开学啦！ from http://news.nankai.edu.cn/dcxy/system/2006/09/01/000001011.shtml
+2025-05-29 21:12:15,328 - INFO - Processing news item: 理想在创新中飞翔 第五届文化素质节开幕 from http://news.nankai.edu.cn/dcxy/system/2006/11/23/000002894.shtml
+2025-05-29 21:12:15,512 - INFO - Processing news item: 袁建明：轮椅上的环保梦 from http://news.nankai.edu.cn/dcxy/system/2006/09/29/000001736.shtml
+2025-05-29 21:12:15,764 - INFO - Processing news item: 环境学院举办“轻盈‘绿’动 减脂低碳”训练营 from http://news.nankai.edu.cn/dcxy/system/2025/05/22/030067172.shtml
+2025-05-29 21:12:17,686 - INFO - Processing news item: 南开非洲留学生：来中国，我就会了第五种语言 from http://news.nankai.edu.cn/dcxy/system/2006/11/03/000002491.shtml
+2025-05-29 21:12:17,724 - INFO - Processing news item: 深圳金融工程学院顺利迁入新校区 from http://news.nankai.edu.cn/dcxy/system/2006/09/01/000000987.shtml
+2025-05-29 21:12:17,731 - INFO - Processing news item: 南开师生踊跃捐款帮助庄广立 from http://news.nankai.edu.cn/dcxy/system/2006/11/22/000002887.shtml
+2025-05-29 21:12:17,910 - INFO - Processing news item: 经济学院05级金融系暑期实践队探访神秘西部 from http://news.nankai.edu.cn/dcxy/system/2006/09/27/000001703.shtml
+2025-05-29 21:12:18,199 - INFO - Processing news item: 商学院在学而思天津分校建立就业实践基地 from http://news.nankai.edu.cn/dcxy/system/2025/05/22/030067170.shtml
+2025-05-29 21:12:19,233 - INFO - Processing news item: 文学学子荣膺“未来编辑杯”竞赛四连冠 from http://news.nankai.edu.cn/dcxy/system/2006/08/30/000000910.shtml
+2025-05-29 21:12:19,393 - INFO - Processing news item: 求知学社“品味周总理的人生” from http://news.nankai.edu.cn/dcxy/system/2006/11/01/000002468.shtml
+2025-05-29 21:12:19,598 - INFO - Processing news item: 南开大学有了“义务导游” from http://news.nankai.edu.cn/dcxy/system/2006/11/22/000002882.shtml
+2025-05-29 21:12:19,756 - INFO - Processing news item: 青春热线：我对大学社团的爱与恨 from http://news.nankai.edu.cn/dcxy/system/2006/09/27/000001686.shtml
+2025-05-29 21:12:19,813 - INFO - Processing news item: 法学院开展习近平法治思想高校联合宣讲暨大中小思政一体化共... from http://news.nankai.edu.cn/dcxy/system/2025/05/20/030067109.shtml
+2025-05-29 21:12:20,584 - INFO - Processing news item: 【组图】开学第一天 from http://news.nankai.edu.cn/dcxy/system/2006/08/29/000000897.shtml
+2025-05-29 21:12:20,894 - INFO - Processing news item: 南开大学羽毛球俱乐部成立 from http://news.nankai.edu.cn/dcxy/system/2006/11/01/000002466.shtml
+2025-05-29 21:12:20,928 - INFO - Processing news item: 百事新星大赛天津赛区总决赛落幕 from http://news.nankai.edu.cn/dcxy/system/2006/11/22/000002881.shtml
+2025-05-29 21:12:20,992 - INFO - Processing news item: 环保志愿者袁建明南开进行签名活动 from http://news.nankai.edu.cn/dcxy/system/2006/09/25/000001660.shtml
+2025-05-29 21:12:21,571 - INFO - Processing news item: 历史学院师生参与海棠街“扬帆计划”实践研学活动 from http://news.nankai.edu.cn/dcxy/system/2025/05/20/030067112.shtml
+2025-05-29 21:12:22,075 - ERROR - Error saving snapshot for http://news.nankai.edu.cn/dcxy/system/2006/11/22/000002881.shtml to SQLite: Recursive use of cursors not allowed.
+2025-05-29 21:12:22,076 - INFO - Processing news item: 法学院研究生将爱心带给脑瘫儿童 from http://news.nankai.edu.cn/dcxy/system/2006/11/22/000002878.shtml
+2025-05-29 21:12:22,088 - INFO - Processing news item: 文学院校友重聚：同窗之谊五十载 悠悠深情系南开 from http://news.nankai.edu.cn/dcxy/system/2006/09/25/000001631.shtml

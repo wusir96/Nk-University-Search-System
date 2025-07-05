@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>网页快照</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        .snapshot-info-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            font-family: sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+        .snapshot-info-bar a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .snapshot-info-bar a:hover {
+            text-decoration: underline;
+        }
+        /* 尝试处理快照中可能的 base href 问题，但这通常需要在服务器端重写HTML */
+    </style>
+</head>
+<body>
+    <div class="snapshot-info-bar">
+        这是保存在服务器上的网页快照。原始网址: <a href="{{ original_url }}" target="_blank">{{ original_url }}</a>
+    </div>
+    <div>
+        <!-- 
+            为了正确显示相对路径的资源 (CSS, JS, images) 在快照中,
+            理想情况下，爬虫保存快照时应将这些资源路径转换为绝对路径，
+            或者服务器端在提供快照时重写HTML中的相对路径。
+            下面的 base 标签是一个尝试，但可能不完美。
+        -->
+        {% if original_url %}
+        <base href="{{ original_url.rsplit('/', 1)[0] + '/' if '/' in original_url else original_url + '/' }}">
+        {% endif %}
+        {% autoescape false %}
+        {{ html_content }}
+        {% endautoescape %}
+    </div>
+</body>
+</html>

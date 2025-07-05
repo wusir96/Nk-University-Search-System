@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>南开搜索引擎</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f8f9fa; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .user-bar { text-align: right; margin-bottom: 20px; padding: 10px; background: #e9ecef; border-radius: 5px; font-size: 14px; }
+        .user-bar a { color: #007bff; text-decoration: none; margin: 0 8px; }
+        .user-bar a:hover { text-decoration: underline; }
+        .search-container { position: relative; margin: 40px 0; }
+        .search-box { width: 100%; padding: 15px; font-size: 18px; border: 2px solid #ddd; border-radius: 25px; box-sizing: border-box; }
+        .search-box:focus { outline: none; border-color: #007bff; }
+        .search-btn { background: #007bff; color: white; padding: 15px 30px; border: none; border-radius: 25px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+        .search-btn:hover { background: #0056b3; }
+        
+        /* 搜索建议样式 */
+        .suggestions { position: absolute; top: 100%; left: 0; right: 0; background: white; border: 1px solid #ddd; border-top: none; border-radius: 0 0 10px 10px; max-height: 300px; overflow-y: auto; z-index: 1000; display: none; }
+        .suggestion-item { padding: 12px 15px; cursor: pointer; border-bottom: 1px solid #f0f0f0; }
+        .suggestion-item:hover { background: #f8f9fa; }
+        .suggestion-item:last-child { border-bottom: none; }
+        
+        /* 推荐区域样式 */
+        .recommendations { margin-top: 30px; }
+        .rec-section { margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 5px; }
+        .rec-title { font-weight: bold; color: #333; margin-bottom: 10px; }
+        .rec-item { display: inline-block; margin: 5px; padding: 5px 10px; background: white; border: 1px solid #ddd; border-radius: 15px; font-size: 14px; }
+        .rec-item a { color: #007bff; text-decoration: none; }
+        .rec-item a:hover { text-decoration: underline; }
+        
+        .navigation { text-align: center; margin-top: 30px; }
+        .navigation a { color: #007bff; text-decoration: none; margin: 0 15px; }
+        h1 { text-align: center; color: #333; margin-bottom: 10px; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 用户状态栏 -->
+        <div class="user-bar">
+            {% if session.user_id %}
+                👤 {{ session.username }} ({{ session.role }}) |
+                <a href="/profile">个人中心</a> |
+                <a href="/recommendations">个性化推荐</a> |
+                <a href="/logout">退出</a>
+            {% else %}
+                <a href="/login">登录</a> |
+                <a href="/register">注册</a>
+            {% endif %}
+        </div>
+
+        <h1>🔍 南开搜索引擎</h1>
+        <p class="subtitle">为您提供南开校内资源的智能搜索服务</p>
+
+        <!-- 搜索表单 -->
+        <form action="/search" method="GET">
+            <div class="search-container">
+                <input type="text" name="q" class="search-box" id="searchInput" 
+                       placeholder="输入关键词搜索..." 
+                       value="{{ request.args.get('q', '') }}"
+                       autocomplete="off">
+                <div class="suggestions" id="suggestions"></div>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="search-btn">🔍 搜索</button>
+            </div>
+        </form>
+
+        <!-- 个性化推荐区域 -->
+        {% if session.user_id %}
+        <div class="recommendations" id="personalizedRec">
+            <!-- 这里会通过AJAX加载个性化推荐 -->
+        </div>
+        {% else %}
+        <!-- 未登录用户显示热门查询 -->
+        <div class="recommendations">
+            <div class="rec-section">
+                <div class="rec-title">🔥 热门搜索</div>
+                <div id="trendingQueries">
+                    <!-- 通过AJAX加载 -->
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- 搜索示例 -->
+        <div class="rec-section">
+            <div class="rec-title">💡 搜索示例</div>
+            <div class="rec-item"><a href="/search?q=南开大学">南开大学</a></div>
+            <div class="rec-item"><a href="/search?q=活动 site:news.nankai.edu.cn">站内搜索</a></div>
+            <div class="rec-item"><a href="/search?q=  "开学典礼" ">"短语搜索"</a></div>
+            <div class="rec-item"><a href="/search?q=计算*">通配搜索</a></div>
+            <div class="rec-item"><a href="/search?q=章程 filetype:pdf">文档搜索</a></div>
+        </div>
+
+        <!-- 导航链接 -->
+        <div class="navigation">
+            <a href="/demo">🎯 功能演示</a> |
+            <a href="/logs">📝 查询日志</a> |
+            <a href="/click-stats">📊 点击统计</a>
+        </div>
+    </div>
+
+    <script>
+        // 搜索建议功能
+        const searchInput = document.getElementById('searchInput');
+        const suggestions = document.getElementById('suggestions');
+        let suggestTimeout;
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.trim();
+            
+            clearTimeout(suggestTimeout);
+            
+            if (query.length < 2) {
+                suggestions.style.display = 'none';
+                return;
+            }
+
+            suggestTimeout = setTimeout(() => {
+                fetch(`/api/search-suggestions?q=${encodeURIComponent(query)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        showSuggestions(data.suggestions);
+                    })
+                    .catch(error => console.error('Error:', error));
+            }, 300);
+        });
+
+        function showSuggestions(suggestionList) {
+            suggestions.innerHTML = '';
+            
+            if (suggestionList.length === 0) {
+                suggestions.style.display = 'none';
+                return;
+            }
+
+            suggestionList.forEach(suggestion => {
+                const div = document.createElement('div');
+                div.className = 'suggestion-item';
+                div.textContent = suggestion;
+                div.addEventListener('click', () => {
+                    searchInput.value = suggestion;
+                    suggestions.style.display = 'none';
+                    // 自动提交搜索
+                    searchInput.closest('form').submit();
+                });
+                suggestions.appendChild(div);
+            });
+
+            suggestions.style.display = 'block';
+        }
+
+        // 点击其他地方隐藏建议
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !suggestions.contains(e.target)) {
+                suggestions.style.display = 'none';
+            }
+        });
+
+        // 加载个性化推荐
+        {% if session.user_id %}
+        fetch('/api/personalized-recommendations')
+            .then(response => response.json())
+            .then(data => {
+                showPersonalizedRecommendations(data);
+            })
+            .catch(error => console.error('Error loading recommendations:', error));
+        {% else %}
+        // 加载热门查询
+        fetch('/api/trending-queries')
+            .then(response => response.json())
+            .then(data => {
+                showTrendingQueries(data);
+            })
+            .catch(error => console.error('Error loading trending queries:', error));
+        {% endif %}
+
+        function showPersonalizedRecommendations(data) {
+            const container = document.getElementById('personalizedRec');
+            let html = '';
+
+            if (data.recent_searches && data.recent_searches.length > 0) {
+                html += '<div class="rec-section"><div class="rec-title">🕒 最近搜索</div>';
+                data.recent_searches.forEach(query => {
+                    html += `<div class="rec-item"><a href="/search?q=${encodeURIComponent(query)}">${query}</a></div>`;
+                });
+                html += '</div>';
+            }
+
+            if (data.related_queries && data.related_queries.length > 0) {
+                html += '<div class="rec-section"><div class="rec-title">🔗 相关推荐</div>';
+                data.related_queries.forEach(query => {
+                    html += `<div class="rec-item"><a href="/search?q=${encodeURIComponent(query)}">${query}</a></div>`;
+                });
+                html += '</div>';
+            }
+
+            container.innerHTML = html;
+        }
+
+        function showTrendingQueries(data) {
+            const container = document.getElementById('trendingQueries');
+            let html = '';
+            
+            data.forEach(item => {
+                html += `<div class="rec-item"><a href="/search?q=${encodeURIComponent(item.query)}">${item.query}</a> <small>(${item.frequency})</small></div>`;
+            });
+            
+            container.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

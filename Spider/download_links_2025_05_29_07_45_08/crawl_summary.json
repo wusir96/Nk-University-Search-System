@@ -1,0 +1,47 @@
+{
+  "crawl_stats": {
+    "start_time": "2025-05-29T07:45:08.535066",
+    "total_pages_crawled": 1922,
+    "total_documents_found": 442,
+    "document_types": {
+      "pdf": 260,
+      "doc": 63,
+      "docx": 68,
+      "jpg": 18,
+      "png": 9,
+      "xls": 6,
+      "rar": 4,
+      "xlsx": 5,
+      "zip": 5,
+      "pptx": 1,
+      "ppt": 2,
+      "exe": 1
+    },
+    "crawl_depth": 5,
+    "end_time": "2025-05-29T08:26:00.127789",
+    "duration": "0:40:51.592723"
+  },
+  "output_structure": {
+    "total_files_created": 2366,
+    "documents_directory": "download_links_2025_05_29_07_45_08\\documents (442 files)",
+    "pages_directory": "download_links_2025_05_29_07_45_08\\pages (1922 files)",
+    "summary_files": [
+      "all_documents.json",
+      "crawl_summary.json"
+    ]
+  },
+  "document_type_distribution": {
+    "pdf": 260,
+    "doc": 63,
+    "docx": 68,
+    "jpg": 18,
+    "png": 9,
+    "xls": 6,
+    "rar": 4,
+    "xlsx": 5,
+    "zip": 5,
+    "pptx": 1,
+    "ppt": 2,
+    "exe": 1
+  }
+}

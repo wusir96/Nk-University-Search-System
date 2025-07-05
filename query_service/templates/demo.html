@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>搜索功能演示</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .demo-section { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .example { background: #f5f5f5; padding: 8px; margin: 5px 0; font-family: monospace; border-radius: 3px; }
+        .example a { text-decoration: none; color: #0066cc; }
+        .example a:hover { text-decoration: underline; }
+        h1 { color: #333; }
+        h2 { color: #666; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Web搜索引擎功能演示</h1>
+    
+    {% for category, examples in examples.items() %}
+    <div class="demo-section">
+        <h2>{{ category }}</h2>
+        {% for example in examples %}
+        <div class="example">
+            <a href="/search?q={{ example|urlencode }}" target="_blank">{{ example }}</a>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+    
+    <div class="demo-section">
+        <h2>其他功能</h2>
+        <p><a href="/logs" target="_blank">查看查询日志</a></p>
+        <p><strong>网页快照：</strong>在搜索结果中点击"快照"链接</p>
+    </div>
+    
+    <p><a href="/">返回搜索页面</a></p>
+    <p style="text-align: center; margin-top: 10px;">
+    <a href="/demo">功能演示</a> | 
+    <a href="/logs">查询日志</a> |
+    <a href="/click-stats">点击统计</a>
+</p>
+</body>
+</html>

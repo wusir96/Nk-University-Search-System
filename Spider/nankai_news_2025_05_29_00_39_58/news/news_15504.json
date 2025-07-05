@@ -1,0 +1,13 @@
+{
+  "id": 15504,
+  "title": "南开学子在全球语音质量预测挑战赛中获佳绩",
+  "url": "http://news.nankai.edu.cn/dcxy/system/2024/06/21/030062303.shtml",
+  "date": "2024-06-21",
+  "source": "来源： 南开大学新闻网",
+  "content": "南开新闻网讯（通讯员 葛路）6月11日，由SLT 2024（IEEE Spoken Language Technology Workshop 2024）主办的VoiceMOS2024挑战赛公布了比赛结果。南开大学计算机学院HLT实验室（Human Language Technologies，人类语言技术）2022级博士生王卉取得了优异成绩，斩获3项第一。\nSLT是IEEE信号处理学会语音和语言处理技术委员会（Speech and Language Processing Technical Committee，SLTC）的旗舰研讨会，每两年举办一次，汇聚了全球智能语音技术领域的顶尖学者和业界专家。VoiceMOS Challenge 2024是本届SLT的亮点活动之一，旨在评估参赛者在自动预测音频质量方面的技术水平。今年的比赛吸引了来自日本、中国、瑞士、捷克、荷兰、瑞典等国家的多支学术和工业团队，竞争异常激烈。\n挑战赛设有三个赛道，分别针对高质量合成语音、歌唱音频以及增强音频的质量评测。在HLT实验室团队的支持与帮助下，王卉通过阅读大量相关论文和进行大量实验，运用先进的算法和技术，成功构建了精准的质量评估模型。在此基础上，王卉设计了先验网络，充分利用数据集中与质量相关的先验知识，进一步提升了系统性能，成功实现了对音频质量的精准预测。最终，王卉在赛道一取得第一名，在赛道三的三个指标中夺得两项第一和一项第二的佳绩。",
+  "content_length": 614,
+  "snapshot_hash": "cf8bee5fded83601da9f5e2e0f1e4e5a",
+  "attachments": [],
+  "crawl_time": "2025-05-29T05:15:32.340890",
+  "list_page_url": "https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000516.shtml"
+}

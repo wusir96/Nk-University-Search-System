@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>重定向错误</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        .error-container { max-width: 600px; margin: 0 auto; }
+        .error-message { background: #f8d7da; color: #721c24; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .back-link { margin-top: 20px; }
+        .back-link a { color: #007bff; text-decoration: none; }
+        .back-link a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1>🚫 重定向失败</h1>
+        <div class="error-message">
+            <strong>无法重定向到目标页面</strong><br>
+            目标URL: {{ target_url }}<br>
+            错误信息: {{ error }}
+        </div>
+        <div class="back-link">
+            <a href="javascript:history.back()">← 返回上一页</a> |
+            <a href="/">🏠 返回首页</a>
+        </div>
+    </div>
+</body>
+</html>

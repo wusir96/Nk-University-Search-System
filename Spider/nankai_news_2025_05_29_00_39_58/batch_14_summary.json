@@ -1,0 +1,12 @@
+{
+  "batch_number": 14,
+  "items_processed": 300,
+  "timestamp": "2025-05-29T02:00:58.173624",
+  "cumulative_stats": {
+    "total_news": 4200,
+    "total_snapshots": 4324,
+    "total_attachments": 4,
+    "start_time": "2025-05-29T00:39:58.139946",
+    "processed_pages": 140
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个性化推荐 - 南开搜索引擎</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        .rec-section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background: #f9f9f9; }
+        .rec-title { font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px; border-bottom: 2px solid #007bff; padding-bottom: 5px; }
+        .rec-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+        .rec-item { background: white; padding: 10px 15px; border-radius: 5px; border: 1px solid #ddd; }
+        .rec-item a { color: #007bff; text-decoration: none; }
+        .rec-item a:hover { text-decoration: underline; }
+        .freq-badge { background: #28a745; color: white; padding: 2px 6px; border-radius: 10px; font-size: 12px; margin-left: 5px; }
+        .navigation { text-align: center; margin: 30px 0; }
+        .navigation a { color: #007bff; text-decoration: none; margin: 0 15px; }
+        h1 { color: #333; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 个性化推荐</h1>
+        
+        {% if recommendations.recent_searches %}
+        <div class="rec-section">
+            <div class="rec-title">🕒 最近搜索</div>
+            <div class="rec-grid">
+                {% for query in recommendations.recent_searches %}
+                <div class="rec-item">
+                    <a href="/search?q={{ query|urlencode }}">{{ query }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if recommendations.frequent_searches %}
+        <div class="rec-section">
+            <div class="rec-title">🔥 频繁搜索</div>
+            <div class="rec-grid">
+                {% for item in recommendations.frequent_searches %}
+                <div class="rec-item">
+                    <a href="/search?q={{ item.query|urlencode }}">{{ item.query }}</a>
+                    <span class="freq-badge">{{ item.count }}次</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if recommendations.related_queries %}
+        <div class="rec-section">
+            <div class="rec-title">🔗 相关推荐</div>
+            <div class="rec-grid">
+                {% for query in recommendations.related_queries %}
+                <div class="rec-item">
+                    <a href="/search?q={{ query|urlencode }}">{{ query }}</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if recommendations.trending_topics %}
+        <div class="rec-section">
+            <div class="rec-title">📈 热门话题</div>
+            <div class="rec-grid">
+                {% for item in recommendations.trending_topics %}
+                <div class="rec-item">
+                    <a href="/search?q={{ item.query|urlencode }}">{{ item.query }}</a>
+                    <span class="freq-badge">{{ item.frequency }}次</span>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <div class="navigation">
+            <a href="/">🏠 返回搜索</a> |
+            <a href="/profile">👤 个人中心</a> |
+            <a href="/demo">🎯 功能演示</a>
+        </div>
+    </div>
+</body>
+</html>

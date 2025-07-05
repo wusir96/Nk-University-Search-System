@@ -1,0 +1,22 @@
+{
+  "crawl_summary": {
+    "total_news": 15750,
+    "total_snapshots": 16232,
+    "total_attachments": 11,
+    "start_time": "2025-05-29T00:39:58.139946",
+    "processed_pages": 525,
+    "end_time": "2025-05-29T05:19:48.869239",
+    "duration": "4:39:50.729293"
+  },
+  "output_structure": {
+    "news_files": "15750 files in nankai_news_2025_05_29_00_39_58\\news",
+    "snapshot_files": "16232 files in nankai_news_2025_05_29_00_39_58\\snapshots",
+    "attachment_files": "11 files in nankai_news_2025_05_29_00_39_58\\attachments"
+  },
+  "file_patterns": {
+    "news": "news_*.json",
+    "snapshots": "snapshot_*.json",
+    "attachments": "attachment_*.json",
+    "batch_summaries": "batch_*_summary.json"
+  }
+}

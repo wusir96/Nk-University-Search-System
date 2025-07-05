@@ -1,0 +1,128 @@
+2025-05-30 16:03:47 - Query: "南开" - Results: 16707
+2025-05-30 16:04:11 - Query: "新闻" - Results: 15082
+2025-05-30 16:09:41 - Query: "报告" - Results: 1953
+2025-05-30 16:10:19 - Query: "南开大学" - Results: 9514
+2025-05-30 16:10:30 - Query: "新闻" - Results: 15082
+2025-05-30 16:14:51 - Query: ""开学典礼"" - Results: 0
+2025-05-30 16:14:57 - Query: "开学典礼" - Results: 146
+2025-05-30 16:15:32 - Query: "南开" - Results: 16707
+2025-06-01 14:29:14 - Query: "南开" - Results: 16707
+2025-06-01 14:43:47 - Query: "南开" - Results: 16707
+2025-06-01 14:46:43 - Query: "南开" - Results: 16707
+2025-06-01 15:35:00 - Query: "site:nankai.edu.cn 计算机" - Advanced: {'site': 'nankai.edu.cn'} - Results: 0
+2025-06-01 15:35:08 - Query: "nankai.edu.cn 计算机" - Results: 0
+2025-06-01 15:35:11 - Query: "nankai.edu.cn 计算机" - Results: 0
+2025-06-01 15:35:22 - Query: "news.nankai.edu.cn" - Results: 1
+2025-06-01 15:36:08 - Query: "章程.pdf" - Results: 0
+2025-06-01 15:36:14 - Query: "南开.pdf" - Results: 53
+2025-06-01 15:36:44 - Query: "news.nankai.edu.cn" - Results: 1
+2025-06-01 15:36:58 - Query: "活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 0
+2025-06-01 15:37:19 - Query: ""人工智能"" - Results: 0
+2025-06-01 15:37:27 - Query: ""南开"" - Results: 16707
+2025-06-01 15:37:37 - Query: "南开" - Results: 16707
+2025-06-01 15:37:55 - Query: "开学典礼" - Results: 146
+2025-06-01 15:38:11 - Query: ""开学典礼"" - Results: 0
+2025-06-01 15:38:18 - Query: ""开学"" - Results: 390
+2025-06-01 15:38:36 - Query: "开学" - Results: 390
+2025-06-01 15:38:47 - Query: "计算" - Results: 602
+2025-06-01 15:38:59 - Query: "南开大学" - Results: 9514
+2025-06-01 15:39:24 - Query: ""南开大学"" - Results: 0
+2025-06-01 15:39:31 - Query: ""南开"" - Results: 16707
+2025-06-01 15:39:41 - Query: "南开" - Results: 16707
+2025-06-01 15:40:04 - Query: "人工智能" - Results: 152
+2025-06-01 15:40:37 - Query: ""人工智能"" - Results: 0
+2025-06-01 15:40:48 - Query: "计算*" - Results: 602
+2025-06-01 15:41:00 - Query: "计算" - Results: 602
+2025-06-01 15:41:07 - Query: "计算*" - Results: 602
+2025-06-01 15:41:48 - Query: "学习" - Results: 7481
+2025-06-01 15:45:32 - Query: "*学习" - Results: 17890
+2025-06-01 15:45:36 - Query: "*学习" - Results: 17890
+2025-06-01 15:45:42 - Query: "*学习" - Results: 17890
+2025-06-01 15:56:53 - Query: ""开学典礼"" - Results: 0
+2025-06-01 15:59:07 - Query: ""开学典礼" site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 0
+2025-06-01 15:59:14 - Query: " site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 0
+2025-06-01 15:59:19 - Query: "news.nankai.edu.cn" - Results: 1
+2025-06-01 15:59:44 - Query: "活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 0
+2025-06-01 16:00:01 - Query: "通知 site:nankai.edu.cn" - Advanced: {'site': 'nankai.edu.cn'} - Results: 0
+2025-06-01 16:20:22 - Query: "活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-01 16:21:33 - Query: "报告 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 20
+2025-06-01 16:22:04 - Query: "章程 filename:章程.pdf" - Advanced: {'filename': '章程.pdf'} - Results: 0
+2025-06-01 16:22:14 - Query: "通知 filename:通知" - Advanced: {'filename': '通知'} - Results: 0
+2025-06-01 16:22:31 - Query: ""开学典礼"" - Results: 0
+2025-06-01 16:22:43 - Query: ""开学典礼"" - Results: 0
+2025-06-01 16:22:54 - Query: "计算*" - Results: 602
+2025-06-01 16:24:29 - Query: "*学习" - Results: 17890
+2025-06-01 16:42:58 - Query: "*学习" - Results: 7481
+2025-06-01 16:43:38 - Query: "计?机" - Results: 0
+2025-06-01 16:43:48 - Query: "计算*" - Results: 602
+2025-06-01 16:44:14 - Query: ""开学典礼"" - Results: 0
+2025-06-01 16:46:50 - Query: "*学习" - Results: 7481
+2025-06-01 17:11:19 - Query: "南开大学" - Results: 9514
+2025-06-01 17:16:23 - Query: "活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-01 17:16:35 - Query: "新闻" - Results: 15082
+2025-06-01 17:17:14 - Query: ""校园招聘" site:job.nankai.edu.cn filetype:doc" - Advanced: {'site': 'job.nankai.edu.cn', 'filetype': 'doc'} - Results: 0
+2025-06-01 17:17:24 - Query: ""开学典礼"" - Results: 0
+2025-06-01 18:46:47 - Query: ""开学典礼"" - Results: 0
+2025-06-01 18:56:02 - Query: "计算*" - Results: 602
+2025-06-01 18:56:22 - Query: ""开学典礼"" - Results: 0
+2025-06-01 19:01:17 - Query: ""开学典礼"" - Results: 146
+2025-06-01 19:01:25 - Query: "开学典礼" - Results: 146
+2025-06-01 19:01:38 - Query: "南开大学" - Results: 9514
+2025-06-01 19:01:47 - Query: "南开" - Results: 16707
+2025-06-01 19:02:03 - Query: "南开" - Results: 16707
+2025-06-01 19:02:12 - Query: "南开大学" - Results: 9514
+2025-06-01 19:02:35 - Query: "活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-01 19:02:48 - Query: "报告 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 20
+2025-06-01 19:02:58 - Query: "计算* " - Results: 602
+2025-06-01 19:15:16 - Query: "南开大学" - Results: 9514
+2025-06-01 19:39:36 - Query: "[2312229] 南开" - Results: 16707
+2025-06-01 19:40:06 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-01 19:53:47 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-01 19:54:03 - Query: "[Anonymous] 活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-01 19:54:25 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-01 19:54:29 - Query: "[Anonymous] 章程 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 5
+2025-06-01 19:54:56 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-03 10:36:25 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-03 10:36:43 - Query: "[Anonymous] 活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-03 16:05:08 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-03 16:05:09 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-03 16:05:31 - Query: "[Anonymous] 学习" - Results: 7481
+2025-06-03 16:16:44 - Query: "[Anonymous] 章程 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 5
+2025-06-03 16:19:56 - Query: "[Anonymous] 活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-03 16:22:50 - Query: "[Anonymous] "开学典礼"" - Results: 146
+2025-06-03 16:25:26 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-03 16:26:25 - Query: "[Anonymous] 计算?" - Results: 601
+2025-06-03 16:28:44 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-03 16:30:59 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-03 16:49:34 - Query: "[2312229] 南开" - Results: 16707
+2025-06-03 16:49:46 - Query: "[2312229] 南开大学" - Results: 9514
+2025-06-03 16:50:44 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 13:58:29 - Query: "[Anonymous] 学习" - Results: 7481
+2025-06-07 13:59:03 - Query: "[Anonymous] 活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-07 14:10:17 - Query: "[Anonymous] 学习" - Results: 7481
+2025-06-07 14:10:58 - Query: "[Anonymous] 章程 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 5
+2025-06-07 14:11:32 - Query: "[Anonymous] 活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-07 14:12:14 - Query: "[Anonymous] "开学典礼"" - Results: 146
+2025-06-07 14:12:39 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-07 14:12:49 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-07 14:13:21 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:15:47 - Query: "[2312229] 学校" - Results: 3009
+2025-06-07 14:16:34 - Query: "[2312229] 南开大学" - Results: 9514
+2025-06-07 14:16:38 - Query: "[2312229] 南开" - Results: 16707
+2025-06-07 14:48:00 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:48:55 - Query: "[Anonymous] 南开大学" - Results: 9514
+2025-06-07 14:50:32 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:50:37 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-07 14:50:47 - Query: "[Anonymous] 活动 site:news.nankai.edu.cn" - Advanced: {'site': 'news.nankai.edu.cn'} - Results: 11060
+2025-06-07 14:51:32 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:52:26 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:53:22 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:53:48 - Query: "[Anonymous] 学校" - Results: 3009
+2025-06-07 14:55:06 - Query: "[2312229] 学校" - Results: 3009
+2025-06-07 14:56:45 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:56:58 - Query: "[Anonymous] 计算*" - Results: 602
+2025-06-07 14:57:00 - Query: "[Anonymous] 章程 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 5
+2025-06-07 14:57:39 - Query: "[Anonymous] 南开" - Results: 16707
+2025-06-07 14:57:52 - Query: "[Anonymous] 章程 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 5
+2025-06-07 14:57:56 - Query: "[Anonymous] 章程 filetype:pdf" - Advanced: {'filetype': 'pdf'} - Results: 5
+2025-06-07 14:58:05 - Query: "[Anonymous] 计算*" - Results: 602

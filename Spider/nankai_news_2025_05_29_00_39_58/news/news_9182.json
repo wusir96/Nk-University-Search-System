@@ -1,0 +1,13 @@
+{
+  "id": 9182,
+  "title": "佐治亚大学教授做客南开金融学术讲堂",
+  "url": "http://news.nankai.edu.cn/dcxy/system/2016/12/19/000311635.shtml",
+  "date": "2016-12-19",
+  "source": "来源： 南开新闻网",
+  "content": "南开新闻网讯(通讯员 郭彬)12月16日，来自美国佐治亚大学的Ping Ma教授做客南开金融学术讲堂，并作了题为“Leveraging methods for massive data logistic regression”的学术报告。\n对于超大样本的海量数据，在计算侧面上，获得最大似然估计的参数值是不可能的，尤其当参数估计值不具有封闭解形式时。Ping Ma介绍了一种快速杠杆算法，从而可以在logistic回归模型中有效地近似得到最大似然估计。而logistic回归是实践中使用最广泛的模型之一。Ping Ma发现一些理论结果的一致性和渐进正态性的估计，合成数据与实际数据集可以用来评估这种方法的实际表现。\nPing Ma目前为佐治亚大学统计学教授，大数据分析实验室的负责人。他还是伊利诺伊香槟分校高级研究中心的Beckman Fellow、美国超算应用中心的成员，以及美国国家自然科学基金CAREER奖金的获得者。他的论文赢得Canadian Journal of Statistics的最佳论文奖。他还是是多家期刊的编委，其中包括Journal of the American Statistical Association，Statistical Applications in Genetics and Molecular Biology等。",
+  "content_length": 579,
+  "snapshot_hash": "6710d377c3f054bf6b53a7fd98427995",
+  "attachments": [],
+  "crawl_time": "2025-05-29T03:35:03.308384",
+  "list_page_url": "https://news.nankai.edu.cn/dcxy/system/count//0005000/000000000000/000/000/c0005000000000000000_000000307.shtml"
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>查询日志</title>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .log-entry { padding: 5px; margin: 2px 0; border-bottom: 1px solid #eee; font-family: monospace; }
+        .log-entry:nth-child(even) { background-color: #f9f9f9; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>查询日志</h1>
+    
+    {% if message %}
+        <p>{{ message }}</p>
+    {% else %}
+        <p>最近的查询记录（最新50条）：</p>
+        {% for log in logs %}
+        <div class="log-entry">{{ log.strip() }}</div>
+        {% endfor %}
+    {% endif %}
+    
+    <p><a href="/">返回搜索页面</a> | <a href="/demo">功能演示</a></p>
+</body>
+</html>

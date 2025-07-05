@@ -1,0 +1,11 @@
+2025-06-01 19:39:38 - Click: http://news.nankai.edu.cn/dcxy/system/2009/04/23/000023187.shtml - Query: "[2312229] 南开" - Rank: 1
+2025-06-03 16:18:32 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/53/f2/00a3e8314160a9d60b96acb03545/795e92cd-b46f-4635-b259-d4cc9467e716.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 2
+2025-06-03 16:18:35 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/1b/df/25f1a6b94d45aabb9bf8354bf721/f572cf0d-325d-4bec-991b-538528f70e8b.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 1
+2025-06-03 16:18:40 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/b8/f6/23549ac24c9881471b7531b72a9e/8f880344-7ecd-478b-8a1c-5365815d9f30.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 5
+2025-06-03 16:18:59 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/b8/f6/23549ac24c9881471b7531b72a9e/8f880344-7ecd-478b-8a1c-5365815d9f30.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 5
+2025-06-07 14:11:09 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/b8/f6/23549ac24c9881471b7531b72a9e/8f880344-7ecd-478b-8a1c-5365815d9f30.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 5
+2025-06-07 14:15:49 - Click: http://news.nankai.edu.cn/dcxy/system/2010/08/29/000033005.shtml - Query: "[2312229] 学校" - Rank: 1
+2025-06-07 14:51:34 - Click: http://news.nankai.edu.cn/dcxy/system/2009/04/23/000023187.shtml - Query: "[Anonymous] 南开" - Rank: 1
+2025-06-07 14:57:46 - Click: http://news.nankai.edu.cn/dcxy/system/2009/04/23/000023187.shtml - Query: "[Anonymous] 南开" - Rank: 1
+2025-06-07 14:57:57 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/1b/df/25f1a6b94d45aabb9bf8354bf721/f572cf0d-325d-4bec-991b-538528f70e8b.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 1
+2025-06-07 14:57:59 - Click: http://xxgk.nankai.edu.cn/_upload/article/files/b8/f6/23549ac24c9881471b7531b72a9e/8f880344-7ecd-478b-8a1c-5365815d9f30.pdf - Query: "[Anonymous] 章程 filetype:pdf" - Rank: 5

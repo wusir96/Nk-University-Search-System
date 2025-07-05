@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果 - {{ query }}</title>
+<style>
+    body { font-family: sans-serif; margin: 20px; }
+    .container { max-width: 800px; margin: auto; }
+    .result-item { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+    .search-result { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+    .result-item h3 a, .search-result h3 a { text-decoration: none; color: #1a0dab; }
+    .result-item h3 a:hover, .search-result h3 a:hover { text-decoration: underline; }
+    .result-item .url, .result-url { color: #006621; font-size: 0.9em; }
+    .result-item .snippet, .search-result .snippet { color: #545454; font-size: 0.9em; }
+    .result-item .meta, .search-result .meta { font-size: 0.8em; color: #777; }
+    .url-text { color: #006621; }
+    .score { color: #888; font-size: 0.8em; margin-left: 10px; }
+    .pagination a { margin: 0 5px; text-decoration: none; }
+    .error { color: red; }
+    mark { background-color: yellow; }
+    b.match { font-weight: bold; background-color: yellow; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>搜索结果</h1>
+        <form action="/search" method="get">
+            <input type="text" name="q" value="{{ query if query else '' }}" style="width: 60%;">
+            <input type="submit" value="搜索">
+        </form>
+
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% elif results_page and total_results > 0 %}
+            <p>找到约 {{ total_results }} 条结果 (第 {{ results_page.pagenum }} 页，共 {{ results_page.pagecount }} 页)</p>
+            
+            {% for hit in processed_results %}
+  <div class="result-item">
+    <h3><a href="{{ hit.url }}" target="_blank">{{ hit.title }}</a></h3>
+    <p class="url">{{ hit.url }}</p>
+    <p class="snippet">{% autoescape false %}{{ hit.highlight }}{% endautoescape %}</p>
+    <p class="meta">
+        {% if hit.publish_date %}发布日期: {{ hit.publish_date.strftime('%Y-%m-%d') }} | {% endif %}
+        {% if hit.source %}来源: {{ hit.source }} | {% endif %}
+        {% if hit.filetype %}类型: {{ hit.filetype }}{% if hit.filename %} ({{ hit.filename }}){% endif %} | {% endif %}
+        Score: {{ "%.2f"|format(hit.score) }}
+        {% if hit.filetype == 'html' and hit.id_in_index is not none and hit.original_data_source_dir %}
+            | <a href="{{ url_for('snapshot', original_data_source_dir=hit.original_data_source_dir, news_id_in_index=hit.id_in_index) }}" target="_blank">[快照]</a>
+        {% endif %}
+    </p>
+ </div>
+            {% endfor %}
+
+            <div class="pagination">
+                {% if results_page.pagenum > 1 %}
+                    <a href="{{ url_for('search', q=query, page=results_page.pagenum-1) }}">上一页</a>
+                {% endif %}
+                <span>第 {{ results_page.pagenum }} 页 / 共 {{ results_page.pagecount }} 页</span>
+                {% if results_page.pagenum < results_page.pagecount %}
+                    <a href="{{ url_for('search', q=query, page=results_page.pagenum+1) }}">下一页</a>
+                {% endif %}
+            </div>
+
+        {% else %}
+            <p>没有找到与 "<strong>{{ query }}</strong>" 相关的结果。</p>
+        {% endif %}
+        <p><a href="{{ url_for('index_page') }}">返回搜索首页</a></p>
+    </div>
+</body>
+</html>
